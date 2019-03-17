@@ -1,0 +1,86 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verify Login",
+        "description": "",
+        "id": "login-functionality;verify-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3649264870,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User in login page",
+            "match": {
+              "location": "StepDefinition.user_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 231619484,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter \"techfiosdemo@gmail.com\" and \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "techfiosdemo@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "abc123",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.user_enter_user_name_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1360070804,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click Signin button",
+            "match": {
+              "location": "StepDefinition.user_click_Signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 717165520,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify user login successfully",
+            "match": {
+              "location": "StepDefinition.verify_user_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:Login.feature",
+    "tags": []
+  }
+]
